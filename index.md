@@ -14,4 +14,4 @@ I will test:
 
 *This* should be a **cool** image of the GitHub logo if everything is done right.
 
-[ ] Markdown test done.
+- [ ] Markdown test done.
