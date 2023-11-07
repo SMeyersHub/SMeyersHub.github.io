@@ -1,0 +1,4 @@
+InvalidFileFormatException: Wrong number of lines in grid.
+	at CircuitBoard.<init>(CircuitBoard.java:129)
+	at CircuitTracer.<init>(CircuitTracer.java:67)
+	at CircuitTracer.main(CircuitTracer.java:26)

@@ -1,0 +1,4 @@
+InvalidFileFormatException: One of the characters in this file is a unapproved character.
+	at CircuitBoard.<init>(CircuitBoard.java:85)
+	at CircuitTracer.<init>(CircuitTracer.java:67)
+	at CircuitTracer.main(CircuitTracer.java:26)

@@ -1,0 +1,146 @@
+****************
+* Project 2: Double Linked List
+* CS221 Section 2
+* 12/5/2019
+* Steven Meyers
+**************** 
+
+OVERVIEW:
+
+ The program sets up a node class that allows for data to be stored in a 
+ double linked list that can navigate back and forward. The double linked 
+ list class has functionality to add, remove, set, get, and check nodes and
+ the data inside of them.
+
+
+INCLUDED FILES:
+
+ * IUDoubleLinkedList.java - primary functionality file (source)
+ * DLLNode.java - primary functionality file (source)
+ * iuDoubleLinkedList.xml - TestNG driver class to run the test files
+ * Test_1_emptyList.java - test file
+ * Test_10_A_add0B_BA.java - test file
+ * Test_11_A_add1B_AB.java - test file
+ * Test_12_A_removeFirst_emptyList.java - test file
+ * Test_13_A_removeLast_emptyList.java - test file
+ * Test_14_A_removeA_emptyList.java - test file
+ * Test_15_A_remove0_emptyList.java - test file
+ * Test_16_A_set0B_B.java - test file
+ * Test_18_AB_addToRearC_ABC.java - test file
+ * Test_2_emptyList_addToFrontA_A.java - test file
+ * Test_20_AB_addAfterCB_ABC.java - test file
+ * Test_25_AB_removeFirst_B.java - test file
+ * Test_26_AB_removeLast_A.java - test file
+ * Test_27_AB_removeA_B.java - test file
+ * Test_28_AB_removeB_A.java - test file
+ * Test_29_AB_remove0_B.java - test file
+ * Test_3_emptyList_addToRearA_A.java - test file
+ * Test_30_AB_remove1_A.java - test file
+ * Test_39_ABC_remove1_AC.java - test file
+ * Test_4_emptyList_addA_A.java - test file
+ * Test_5_emptyList_add0A_A.java - test file
+ * Test_6_A_addToFrontB_BA.java - test file
+ * Test_7_A_addToRearB_AB.java - test file
+ * Test_8_A_addAfterBA_AB.java - test file
+ * Test_9_A_addB_AB.java - test file
+ * README - this file
+
+
+COMPILING AND RUNNING:
+
+ Give the command for compiling the program, the command
+ for running the program, and any usage instructions the
+ user needs.
+ 
+ These are command-line instructions for a system like onyx.
+ They have nothing to do with Eclipse or any other IDE. They
+ must be specific - assume the user has Java installed, but
+ has no idea how to compile or run a Java program from the
+ command-line.
+ 
+ When inside the director with all source files and test files,
+ compile them all with the following command:
+ ```
+ $javac *.java
+ ```
+ Following compilation, you can run the testNG file to test the 
+ IUDoubleLinkedList class, DLLNode class (through the functionality
+ of the IUDoubleLinkedList class), and the DLLListIterator class. 
+ To do this, use the following command:
+ ```
+ $java org.testng.TestNG iuDoubleLinkedListItr.xml
+ ```
+ Iterator should print out a result with all tests passed, and over
+ 4000 tests run.
+
+ You can also run the other test file using the following line of code:
+ ```
+ $java org.testng.TestNG iuDoubleLinkedList.xml
+ ```
+ This test should result in 938 tests with no failures or skips.
+ 
+PROGRAM DESIGN AND IMPORTANT CONCEPTS:
+
+ To fully understand the program, the first important file to look 
+ at would be the smallest part, the DLLNode class. This class is the 
+ basis for the whole program and how it functions. Using the methods 
+ defined in the class, we can store any type of data within a node that
+  can move both to the next node and previous node. 
+ 
+ The DLLNode class then is used in the next class, the IUDoubleLinkedList 
+ class. In this class, there are a wide variety of methods that allow the 
+ user to set and get the elements contained in nodes, add nodes with elements 
+ at certain areas (such as the back, front, and after another node), and remove 
+ a node with its element inside it. Using this class and the DLLNode class, a basic 
+ double linked list can be created and maintained, although it will have to run 
+ using recursion through the methods in this class. This class implements 
+ the Iterable and IndexedUnsortedlist interfaces.
+ 
+ The last class developed is the DLLListIterator which implements the 
+ ListIterator interface. This iterator consists of the same functionality 
+ as the DLLNode class, but done through iteration rather than recursion. 
+ Using the Iterable interface implemented in the IUDoubleLinkedList class, 
+ the double linked list of nodes can be sorted through using this iterator.
+ 
+ The program was designed this way to make the double linked list as accessible 
+ as possible for all uses. I built it all from the ground up to work together and 
+ (hopefully) pass many situations it would be put in, whether they be recursive or 
+ iterable. If further changes are going to occur to the program, I would encourage them
+ to read the notes thoroughly to understand even in more depth what everything does.
+ 
+
+TESTING:
+
+ I tested this program using the provided test classes by the instructor. Those test 
+ classes were used to test the iteration feature of the program while the test classes
+ I had previously developed for a Single Linked List and Array List tested the actual 
+ linked list methods. I tested using the .xml files not only in the Eclipse IDE, but 
+ also using the Onyx server. There is no way to guarantee that it will be idiot proof, 
+ but the list checks for out of bound's exceptions so it should be hard to break the list.
+
+
+DISCUSSION:
+ 
+ This project over all had some struggling moments in it. Starting the project was quite 
+ difficult because it was such a large scope that I had never dealt with before. Once I
+ got some of the normal methods done, such as the add and next/previous methods in the 
+ IUDoubleLinkedList class, it got a bit easier as I could then move on a test by test
+ basis. I had to research on how to do the concept of the iterator for a double linked list
+ on my own as I was sick for that day of class, but it seems to not be too difficult as it 
+ consists mainly of a lot of checking the existing state before you do something. One of the
+ largest errors I got was an error checking my "No next node" out of bounds exception way too 
+ early on some tests. I found out the reason that this had happened was because I was not 
+ setting the count (size of list) int value up one on my addAfter method originally. This 
+ caused roughly two hours of bug testing too simply find out where my logic went wrong.
+ 
+ This project was overall challenging and I think the parts I found the most difficult were
+ the determining the non-index based methods in the main class. It clicked about halfway through 
+ the main class on how I could make the program recursively go through and scan the nodes for the 
+ item to skip a direct index based approach allowing me to make the addAfter method (for example) 
+ with the double node inputs. The rest of the program was simply making sure I was linking the nodes
+ correctly and went smooth enough to not be exciting.
+ 
+EXTRA CREDIT:
+
+ NA. No extra credit was offered for this project.
+

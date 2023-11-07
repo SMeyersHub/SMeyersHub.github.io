@@ -1,0 +1,97 @@
+# Project 2: Non-Deterministic Finite Automata 
+
+* Author: Steven Meyers
+* Class: CS361 Section 2
+* Date: 11/8/2020
+* Semester: Fall 2020
+
+## Overview
+
+This program simulates a NFA with transitions and states. The user can add states and
+transitions as well as make a DFA from the NFA.
+
+## Compiling and Using
+
+To compile and use this code, make sure you have the rest of the files 
+needed from the Blackboard assignment. Included in these files is a NFADriver.java file.
+To comple from the top directory, use the following command:
+```
+$ javac fa/nfa/FILENAME.java
+```
+For expample, to compile the NFADriver.java file:
+```
+$ javac fa/nfa/NFADriver.java
+```
+
+To use the program, run:
+```
+$ java fa.nfa.NFADriver [testfile.txt]
+```
+Where the test file follows the proper format from the assignment, resulting in proper 
+construction of the NFA and DFA.
+
+## Discussion
+
+This project was quite difficult. Even though it was assigned quite a while ago, 
+I only had roughly 48 total hours to work on it due to how my classes have been assigning
+work this semester. The obvious problems started arising when working on the toDFA method.
+This method does not even work completely yet as I ran out of time, due to my own fault. The
+main problem that arose and never got fixed is what to do when a state and a transition go to a
+null state. This problem rises since a lot of states go to a null state on a transition, but only
+some of them actually form and go to a trap state. Since I could never find out how to implement 
+this feature without editting the DFA files, it doesnt work and simply just goes off of not creating
+states that have transitions to null states. In terms of things that went well, I learned a lot from 
+my mistakes this project, so thats has to count for something.
+
+The process I went through when creating this program was that I just had to go for speed over 
+optimization due to the lack of time mentioned before. To do this, I went very bare bones on the 
+structuring of the program and relied heavily on looping through Sets of NFAStates and other Sets
+to accomplish a rudimentary form of BFS. Other than that, a lot of the simpler parts could be directly 
+ripped from my previous working DFS structure and simply editted to fit that of a NFS. 
+
+I had to do plenty of research this project on exceptions and how to handle them. Due to the amount of
+looping and iteration I was doing on multiple different kinds of Sets, Maps, and ArrayLists, there were
+a lot of unique errors that arose. The main one that kept on appearing and took a while to fix was the 
+ConcurrentModificationException, but luckily the Java user manual on the oracle website provided me with
+all the context I needed to find out what I was doing wrong. I simply had to change one of my lists at a 
+later point than I was.
+
+The error that I had to do reasearch on and the null error were my two main errors I encountered. The 
+error I was researching was a simple fix, as stated above, that I just simply moved when I updated and
+added to a list till I was out of the for loop iterator on it. The null errors were more conceptual and 
+never were fixed because, as I explained, my lacking scheduling skills.
+
+I found this whole project to be challenging, possibly more than it should be. What makes this whole project
+challenging is the lack of editing on the provided files. I believe that my null error could have been fixed
+by simply catching the null in the DFA file, but since I could not edit that file, I needed to find a way to 
+catch the null in only certain cases a layer under where it was being thrown. This made it so that the error
+messages that were being printed out were not very useful as they were all being thrown by the same line in the 
+DFA file which called the NFA method. This lack of detail in the error messages generated is what in particular
+made the project very challenging. Other than that, most of it could be created from editted and improved code
+from the previous DFA project, so that wasn't too bad.
+
+There were really no clicking moments for me. Just lots of confusion taking shots randomly in the dark to
+possibly hit some sort of working form, which did work suprisingly decent for some methods.
+
+I would change this project in either adding more detailed error messaging or making students use their
+previous DFA program to create the NFA rather than the provided one. This would make it easier for students that
+had went through the extra work of adding lots of supporting methods into their DFA program and would make it
+more of a learning experience on how you transfer a DFA to an NFA, as it already would require them to understand
+exactly how their DFA worked and "looked" like in a graph.
+
+I can apply the knowledge of not taking too much classes at once leading to a lack of time to work in each class
+to my future projects and classes.
+
+## Testing
+
+I tested this project using the provided test classes. I did not want to make my own tests and 
+accidentally mess something up with the way the file is formatted and then think the problem was with my program. I simply
+kept using the provided test cases and comparing them to the results seen in the project until they were as close as possible.
+
+## Extra Credit
+
+No extra credit in this assignment.
+
+## Sources used
+
+[ConcurrentModificationException (Java Platform SE7)](https://docs.oracle.com/javase/7/docs/api/java/util/ConcurrentModificationException.html)

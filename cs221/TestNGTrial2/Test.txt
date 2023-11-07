@@ -1,0 +1,9 @@
+[TestNG] Running:
+  /home/STEVENMEYERS946/cs221/TestNGTrial2/testng.xml
+
+
+===============================================
+Suite 1
+Total tests run: 3, Failures: 0, Skips: 0
+===============================================
+

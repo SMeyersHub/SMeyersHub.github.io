@@ -1,0 +1,6 @@
+begin
+x=9+20;
+y=1+2;
+wr x;
+wr y
+end

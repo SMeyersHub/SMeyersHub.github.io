@@ -1,0 +1,5 @@
+This program requires three unique arguments for operation. They are as follows: 
+First argument: -s if a stack memory type or -q for a queue memory type.
+Second argument: -c if you want console output and -g if you want GUI output (will return message if it is not supported).
+Third argument: File name. Will return an error and a message if the file is not found.
+Example program launch: $java CircuitTracer -s -c filename.txt 

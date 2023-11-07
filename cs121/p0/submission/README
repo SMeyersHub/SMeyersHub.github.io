@@ -1,0 +1,32 @@
+# Project 1: Steven Meyers
+
+*Author: Steven Meyers
+*Class CS121 Section 005
+*Semester: Spring 2019
+
+##Overview
+
+This program animates a simple scene with a moving car using the 
+java.awt.Graphics class. The scene animated consists of a car,
+background, and person with text on the screen.
+
+##Compiling and Using
+
+Compile this code by typing into your chosen console:
+```
+$javac TrafficAnimation.javac
+```
+To run the compiled class, type:
+```
+$java TrafficAnimation
+```
+
+No user input or interaction is needed past this point, the 
+animation should run on its own and loop.
+
+##Sources Used 
+
+[Graphics (Java Platform SE 7)] (https://docs.oracle.com/javase/7/docs/api/java/awt/Graphics.html)
+[Output: Strings, Fonts, and Numbers] (http://archive.oreilly.com/oreillyschool/courses/java2/java204.html)
+[graphics - How to Change Font Size in drawString Java - Stack Overflow](https://stackoverflow.com/questions/18249592/how-to-change-font-size-in-drawstring-java)
+Java provided example codes from text book

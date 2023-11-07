@@ -1,0 +1,4 @@
+InvalidFileFormatException: A start or end has not been declared
+	at CircuitBoard.<init>(CircuitBoard.java:112)
+	at CircuitTracer.<init>(CircuitTracer.java:67)
+	at CircuitTracer.main(CircuitTracer.java:26)

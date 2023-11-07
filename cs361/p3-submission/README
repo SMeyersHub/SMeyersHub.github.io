@@ -1,0 +1,75 @@
+# Project 3: RE to NFA
+
+* Author: Steven Meyers
+* Class: CS361 Section 2
+* Date: 12/6/2020
+* Semester: Fall 2020
+
+## Overview
+
+This program takes in a regular expression and has one main method to turn it into an 
+NFA.
+
+## Compiling and Using
+
+To compile and use this code, make sure you have the rest of the files 
+needed from the Blackboard assignment. Included in these files is a REDriver.java file.
+To comple from the top directory, use the following command:
+```
+$ javac -cp ".:./CS361FA.jar" re/REDriver.java
+```
+
+To use the program, run:
+```
+$ java -cp ".:./CS361FA.jar" re.REDriver [PROPERLY FORMATTED TXT FILE]
+```
+Where the test file follows the proper format from the assignment, resulting in proper 
+construction of the RE and testing strings.
+
+## Discussion
+
+This project was confusing to start out on, but the guide of the RE parser helped significantly. 
+When starting this project, I had confusion over how to test it out and get the proper classes working from
+the jar file. Once I got that working, the project went smoothly for a bit as I put in the easy to implement
+components from the regular expression parser. It then got harder once I had to implement the NFA building 
+components from the existing framework.
+
+The creative process I went through to handle building the NFA is that I basically just got a whiteboard and
+drew out what was happening to the NFA as I parsed the regular expression. This was extremely beneficial as 
+it allowed me to easily track what I had already done and see what I needed to do for the next step. This 
+includes stuff such as setting up the or functionality and where to put the epsilon transitions to make it 
+work.
+
+Researching more into how to convert REs to NFAs was definitely useful as that was all that was mainly lacking
+from the assignment information. I ran into multiple errors of NullPointer as I accidentally messed up my term
+method was searching nextFactor for isEmpty() rather than the original Factor. This resulted in it being false,
+calling the rest of the methods, and returning an NFA with no start state. The regex method would then call 
+"termNFA.getStartState().getName()" and it would not be able to find the start state, throwing a NullPointer.
+I solved this by simply swapping the nextFactor.isEmpty() with factor.isEmpty() and it worked just fine then.
+
+The most challenging part of this project was definitely the conceptual thinking aspect. Its difficult enough
+to convert from an RE to a drawn out NFA, but doing that all through programming got confusing quickly. Once
+the parser was outline, I had several "clicking" moments in my mind where I would draw out what I intended to 
+do and then just write it in a way that would work. It still took several attempts of drawing out different
+NFA's but eventually I got the correct one and that was the clicking moment.
+
+This project was pretty good so I don't know if I would really change anything significant about it. The only
+thing I might do is make it so the NFA and DFA files are easier to access, but I understand why they are done
+they way they are. Overall, I'd say this project taught me a lot about how to import .jar files and also how
+to breakdown existing concepts (such as the regex parser) and turn them into your own useful form.
+
+## Testing
+
+To test this project, I used the existing tests that were provided as well as making my own. To make my own, I 
+followed relatively close to the provided examples and used old RE to NFA's we had created in this class. Once
+I verified that they were all working, I ran the provided tests again and compared my results with the test's
+confirmed results. This gave me a relatively good idea that my method was atleast working in a way close to
+what it should be.
+
+## Extra Credit
+
+No extra credit in this assignment.
+
+## Sources used
+
+[Parsing regular expressions with recursive descent](http://matt.might.net/articles/parsing-regex-with-recursive-descent/)

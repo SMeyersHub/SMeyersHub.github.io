@@ -1,0 +1,87 @@
+****************
+* P1: Grid Monitor
+* CS221
+* 20 September 2019
+* Steven Meyers
+**************** 
+
+OVERVIEW:
+The Grid Monitor program takes a filename and makes a 2D array of
+doubles out of the file. It then modifies the grid to produce several
+other variations of the 2D array.
+
+INCLUDED FILES:
+*GridMonitor.java - the class with the methods for the program
+*GridMonitorInterface.java - the interface used for GridMonitor.java
+*GridMonitorTestCase.java - a class that contains the test cases for the GridMonitorTester
+*GridMonitorTester.java -  a class that uses TestNG to test the GridMonitor methods
+*gridMonitor.xml - the TestNG class used to run the testers and give results
+*negatives.txt - a sample .txt using negative numbers in cells for testing
+*oneByOne.txt - a sample .txt using an array with one cell and double for testing
+*sample.txt - a sample .txt of a 2D array of numbers for testing
+*sample4x5.txt - a sample .txt using a 2D array of a different size then the rest for testing
+*sampleDoubles.txt - a sample .txt using doubles in the cells for testing
+*wideRange.txt - a sample .txt using a large range of values for testing
+*README - this information file.
+
+COMPILING AND RUNNING:
+To compile and run this program, make sure all listed files above are in the same folder.
+When in the folder they are all in, type the command: 
+```
+$javac *.java 
+```
+This creates all the classes for the multiple .java files in one easy command. After that
+command, type this to run the tester:
+```
+$java org.testng.TestNG gridMonitor.xml
+``` 
+This command should automatically run the tester and if the files are
+all put in the same folder, should return with an output of:
+```
+===============================================
+Grid Monitor
+Total tests run: 68, Failures: 0, Skips: 0
+===============================================
+```
+
+PROGRAM DESIGN AND IMPORTANT CONCEPTS:
+This program works using three main .java files, two for testing and one to receive
+and modify the information input into it. GridMonitor.java takes in the filenames of the
+sample files given to it via the GridMonitorTester. GridMonitor then modifies the information inside
+the named files in several different ways which then are examined by the GridMonitorTestCase. The 
+GridMonitorTestCase returns true or false based on the predefined cases and the gridMonitor.xml
+prints out the results of the tests. The GridMonitor.java gets all of its methods
+from the GridMonitorInterface, which is the only interface in the whole program, but
+is arguably one of the most important parts.
+
+TESTING:
+I tested this program using the provided GridMonitorTestCase class, GridMonitorTester class,
+and the gridMonitor.xml. I also used the provided sample texts given with the test classes
+since that is what the GridMonitorTester uses to test the GridMonitor class. My program can handle bad input in 
+terms of filenames, as it will catch the errors produced from a FileNotFoundException. Any bad
+inputs in a valid file will be truncated in the array at whatever the first two numbers of 
+the file are, since those are what is used to create the 2D grid. The program would not be 
+fully "idiot proof" as it technically would be incorrect for incorrectly formatted files, but it
+would still run and make grids from the information provided. An initial issue I see in the code
+is that it could have a faster run time.  A second issue is that it might produce errors/no array
+if a file with no number inputs at all is put into the program.
+
+DISCUSSION:
+I encountered several problems developing this program. The first major problem I encountered
+was the number of encapsulation errors that were appearing from the TestNG output the first time I ran it.
+I realized that my constructor had been incorrectly set up and was doing the grid scanning, which was causing a 
+large number of errors when it came to the encapsulation of the variables. I fixed this by researching 
+more about encapsulation and then moving all the calculations that were in the constructor into the 
+getBaseGrid method. I called the getBaseGrid in my constructor and then the only thing I had to have
+outside of a method was the filename, which when put in a protected accessibility stopped my tester
+from producing errors of encapsulation. Another struggle I had was during the getSurroundingSumGrid.
+I could not seem to get the correct if statements placed where I wanted them to be and the scanner was
+not working correctly because of this. The way I resolved this is I drew a picture of the grid I wanted
+and put the if statements around the grid on the sides they would correspond too. Then I wrote all the
+methods down for each spot of a grid and, finally, I put the if statements with identical conditionals 
+together, making my if statements more easily read and understood. After that, the rest of the calculations
+and conditionals went smoothly. 
+ 
+EXTRA CREDIT:
+NO EXTRA CREDIT.
+

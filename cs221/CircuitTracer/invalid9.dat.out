@@ -1,0 +1,4 @@
+InvalidFileFormatException: Y value input mismatched
+	at CircuitBoard.<init>(CircuitBoard.java:65)
+	at CircuitTracer.<init>(CircuitTracer.java:67)
+	at CircuitTracer.main(CircuitTracer.java:26)

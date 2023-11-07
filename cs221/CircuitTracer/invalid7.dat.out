@@ -1,0 +1,4 @@
+InvalidFileFormatException: Too little elements overall
+	at CircuitBoard.<init>(CircuitBoard.java:77)
+	at CircuitTracer.<init>(CircuitTracer.java:67)
+	at CircuitTracer.main(CircuitTracer.java:26)

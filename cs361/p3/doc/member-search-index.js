@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"re","c":"RE","l":"getNFA()"},{"p":"re","c":"RE","l":"RE(String)","url":"%3Cinit%3E(java.lang.String)"}]

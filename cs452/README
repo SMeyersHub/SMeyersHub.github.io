@@ -1,0 +1,26 @@
+Author: Steven Meyers and Professor Buffenbarger
+Date: 1/26/23
+Class: CS452 Sp23
+
+Overview:
+This assignment is a representation of the double ended queue using null pointers. I implemented the four missing functions that are used by the other functions in the deq.c. 
+The functions that I implemented are:
+put
+get
+ith
+rem
+The rest of the functions were developed by Professor Buffenbarger.
+
+Use:
+To use this program, cd into the hw1 folder and type 'make'. This will make all the files required to run the program. Run the program with 'deq'. No user input is required as it is all currently just run in the test functions included in main. The output should be as follows:
+```
+rem: Data does not exit in deq.
+rem: Data does not exit in deq.
+2
+b c
+```
+If the user wants to, they can add their own functions inside the test functions to see the different results produced. The current functions should test all the edge cases.
+
+Additional Comments:
+When writing this code, I frequently used valgrind and gdb for tracking down bugs and segmentation faults. As of this submission and the test cases provided, valgrind reports no memory leaks possible. Memory leaks may still be doable, but I have tested many different ways of testing and got none yet.
+The most difficult part I had when writing this program was just getting the intial put function implemented. Understanding what the rep and the deq were took a while but once I understood that rep was the representation of the deq, it was pretty straightforward from there. I did a lot of drawings to make sure I got everything covered in adding and removing nodes and their links from each other, which also helped a lot in the early states of all functions. 

@@ -1,0 +1,25 @@
+# Language Assignment 4: AWK CSV to HTML
+
+* Author: Steven Meyers
+* Class: CS354 Section 1
+* Semester: Fall 2020
+
+## Overview
+
+This script is made in AWK to read from specific formatted CSV files that
+include information about housing. This script pulls out the single family
+dwellings and formats a website showing information on them in a table format.
+
+## Compiling and Using
+
+To use this code, the csvtohtml.awk file should be executable. This means that
+you should be able to write:
+```
+./csvtohtml.awk < [CSV FILE].csv > [HTML FILE].html
+```
+where [CSV FILE] is the particular formatted CSV file and [HTML FILE] is the name of the
+html file you want the awk script to write too. If this does not work, you can use gawk on
+onyx to run the script as well.
+```
+gawk -f csvtohtml.awk < [CSV FILE].csv > [HTML FILE].html
+```

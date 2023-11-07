@@ -1,0 +1,10 @@
+[291]  Start grading /home/BrianMerrick/cs253/hw/p1/stevenmeyers946.tar Score=60
+[308]  Grading /home/BrianMerrick/Documents/CS253/projects/P1/cch/grader/TestData/testFile.txt Score=60
+[318]  Grading normal exit status Score=60
+upper-case: 0
+lower-case: 0
+vowels: 0
+consonants: 0
+digits: 0
+total: 0
+[333]  FinalScore=60  Score=60

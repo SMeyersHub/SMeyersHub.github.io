@@ -1,0 +1,23 @@
+[301]  Start grading /home/BrianMerrick/cs253/hw/p3/stevenmeyers946.tar Score=80
+[311]  Grading make all Score=80
+[326]  Grading CFLAGS and -Wall Score=80
+[327]  ERROR:  Could not grep CFLAGS.*Wall in Makefile Score=76
+[330]  Grading CFLAGS and -std=c99 Score=76
+[331]  ERROR:  Could not grep CFLAGS.*c99 in Makefile Score=72
+[334]  Grading make rebuilding sed253.o if out-of-date with source file Score=72
+[342]  Grading make rebuilding delete.o if out-of-date with delete.h Score=72
+[350]  Grading make rebuilding executable out-of-date with copy.h Score=72
+[359]  Grading make does nothing if product is up-to-date Score=72
+[368]  Grading copy of well-behaved file Score=72
+[384]  Grading copy of bufferOverflow.txt Score=72
+[394]  Grading delete Score=72
+[406]  Grading substitute with identical length pattern and replacement strings Score=72
+[418]  Grading substitute with replacement shorter than pattern string Score=72
+[428]  Grading substitute with replacement longer than pattern string Score=72
+[438]  Grading substitute with a tricky string matching pattern Score=72
+[442]  ERROR:  Abnormal exit status = 124 Score=72
+[445]  ERROR:  Could not grep foofoolish foofood eaters play foofootball with foofoo in testOutput.txt Score=64
+[448]  Grading the case of a zero-length replacement string Score=64
+[459]  Grading buffer-overflow attack on substitute feature Score=64
+[468]  Grading make clean Score=64
+[481]  FinalScore=64  Score=64

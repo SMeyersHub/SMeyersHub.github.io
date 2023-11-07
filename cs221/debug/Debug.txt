@@ -1,0 +1,40 @@
+Debugging ArraySet.java
+Name: Steven Meyers
+Section: 02
+
+Bug #1:
+    -What's the name of failed test? 
+	testIsEmpty
+    -Where (line number) did you place breakpoint(s)? 
+	Line 58 in TestSimpleSet_1.java
+    -Where (line number) was the bug was found? 
+	ArraySet.java line 40.
+    -What did you do to fix it? 
+	I set rear to equal 0 when isEmpty instead of greater than 0 since rear is also used as the
+	size of the set, so when it is 0, the array must be empty.
+
+Bug #2:
+    -What's the name of failed test?
+	intializeSet
+    -Where (line number) did you place breakpoint(s)? 
+	Line 29 in TestSimpleSet_2
+    -Where (line number) was the bug was found? 
+	ArraySet.java line 60
+    -What did you do to fix it? 
+	I added a rear++ to the add method so that whenever something was added into rear, the 
+	value of rear went up by 1 so that rear wouldn't be 0 by the time it hit the remove method and 
+	the remove method could operate correctly instead of skipping to false when i = 0 and 
+	rear = 0.
+
+Bug #3:
+    -What's the name of failed test?
+	testRemove_validElements
+    -Where (line number) did you place breakpoint(s)? 
+	115 in TestSimpleSet_6
+    -Where (line number) was the bug was found? 
+	78 in ArraySet.java
+    -What did you do to fix it? 
+	I made the while statement be (i < rear - 1) so that it wouldnt go out of bounds and set 
+	off an ArrayIndexOutofBounds error.
+
+	

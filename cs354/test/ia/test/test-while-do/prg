@@ -1,0 +1,2 @@
+while 2 < 5 do x=10;
+wr x

@@ -1,0 +1,22 @@
+# Language Assignment 2: Bank SmallTalk Program
+
+* Author: Steven Meyers
+* Class: CS354 Section 1
+* Semester: Fall 2020
+
+## Overview
+
+This program is a simple Banking program that can keep track of Customers, accounts, and
+do operations on those accounts and their balances. The classes included are Account.st,
+Bank.st, CheckingAccount.st, Customer.st, and SavingsAccount.st. This program is based on
+a Java program written by Professor Buffenbarger.
+
+## Compiling and Using
+
+To compile and use this code, make sure that all the listed files above are in the same
+directory.
+To run the program from the directory all the files are in using the gst translator,
+use the following command:
+```
+$ app gst Customer.st Account.st CheckingAccount.st SavingsAccount.st Bank.st
+```

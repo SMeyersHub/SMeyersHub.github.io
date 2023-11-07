@@ -1,0 +1,33 @@
+# Project 1: PlayList Analyzer
+
+* Author: Steven Meyers
+* Class: CS121 Section 005
+* Semester: Spring 2019
+
+## Overview
+
+This project prompts the user to input three song names, artists,
+times, and file paths. It stores this data in 3 Song objects and
+uses the data to calculate the average time, what song is closest
+to four minutes, and make a list from the shortest song to the 
+longest song.
+
+## Compiling and Using
+
+Compile this code by typing into your chosen console:
+```
+$javac PlayList.java
+```
+To run the compiled class, type:
+```
+$java PlayList
+```
+The program will then prompt you to enter a song title, artist, 
+time, and file path three times in a row. After those inputs, no 
+further interaction is required to get the output.
+
+##Sources used
+
+[String (Java Platform SE 7)] (https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
+[Double decimal formatting in Java - Stack Overflow] (https://stackoverflow.com/questions/12806278/double-decimal-formatting-in-java)
+[Java Foundations Introduction to Program Design & Data Structures 4th Edition by John Lewis] (textbook)

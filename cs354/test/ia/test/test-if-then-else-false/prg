@@ -1,0 +1,2 @@
+if 10==30 then x=5.0 else x=10.0;
+wr x

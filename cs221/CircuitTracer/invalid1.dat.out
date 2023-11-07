@@ -1,0 +1,4 @@
+InvalidFileFormatException: Start has already been declared
+	at CircuitBoard.<init>(CircuitBoard.java:95)
+	at CircuitTracer.<init>(CircuitTracer.java:67)
+	at CircuitTracer.main(CircuitTracer.java:26)

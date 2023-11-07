@@ -1,0 +1,1077 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="68" passed="68" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-09-20T10:38:52 MDT" name="Grid Monitor" finished-at="2019-09-20T10:38:52 MDT" duration-ms="498">
+    <groups>
+    </groups>
+    <test started-at="2019-09-20T10:38:52 MDT" name="Tests" finished-at="2019-09-20T10:38:52 MDT" duration-ms="498">
+      <class name="GridMonitorTester">
+        <test-method signature="testBaseGridEncapsulation(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testBaseGridEncapsulation" data-provider="baseGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="39" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sample.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@79924b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseGridEncapsulation -->
+        <test-method signature="testBaseGridEncapsulation(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testBaseGridEncapsulation" data-provider="baseGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="14" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[negatives.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@4cc451f2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseGridEncapsulation -->
+        <test-method signature="testBaseGridEncapsulation(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testBaseGridEncapsulation" data-provider="baseGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="13" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[oneByOne.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@294425a7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseGridEncapsulation -->
+        <test-method signature="testBaseGridEncapsulation(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testBaseGridEncapsulation" data-provider="baseGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="12" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sample4x5.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@9f116cc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseGridEncapsulation -->
+        <test-method signature="testBaseGridEncapsulation(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testBaseGridEncapsulation" data-provider="baseGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sampleDoubles.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@1aa7ecca]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseGridEncapsulation -->
+        <test-method signature="testBaseGridEncapsulation(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testBaseGridEncapsulation" data-provider="baseGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wideRange.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@5876a9af]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseGridEncapsulation -->
+        <test-method signature="testConstructor(java.lang.String)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testConstructor" data-provider="files" finished-at="2019-09-20T10:38:52 MDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sample.txt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConstructor -->
+        <test-method signature="testConstructor(java.lang.String)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testConstructor" data-provider="files" finished-at="2019-09-20T10:38:52 MDT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[negatives.txt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConstructor -->
+        <test-method signature="testConstructor(java.lang.String)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testConstructor" data-provider="files" finished-at="2019-09-20T10:38:52 MDT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[oneByOne.txt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConstructor -->
+        <test-method signature="testConstructor(java.lang.String)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testConstructor" data-provider="files" finished-at="2019-09-20T10:38:52 MDT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sample4x5.txt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConstructor -->
+        <test-method signature="testConstructor(java.lang.String)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testConstructor" data-provider="files" finished-at="2019-09-20T10:38:52 MDT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sampleDoubles.txt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConstructor -->
+        <test-method signature="testConstructor(java.lang.String)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testConstructor" data-provider="files" finished-at="2019-09-20T10:38:52 MDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wideRange.txt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConstructor -->
+        <test-method signature="testDangerGridEncapsulation(java.lang.String, [[Z, boolean)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testDangerGridEncapsulation" data-provider="dangerGridsEncapsulation" finished-at="2019-09-20T10:38:52 MDT" duration-ms="10" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sample.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[Z@515aebb0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDangerGridEncapsulation -->
+        <test-method signature="testDangerGridEncapsulation(java.lang.String, [[Z, boolean)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testDangerGridEncapsulation" data-provider="dangerGridsEncapsulation" finished-at="2019-09-20T10:38:52 MDT" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[negatives.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[Z@245b4bdc]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDangerGridEncapsulation -->
+        <test-method signature="testDangerGridEncapsulation(java.lang.String, [[Z, boolean)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testDangerGridEncapsulation" data-provider="dangerGridsEncapsulation" finished-at="2019-09-20T10:38:52 MDT" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[oneByOne.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[Z@6ae5aa72]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDangerGridEncapsulation -->
+        <test-method signature="testDangerGridEncapsulation(java.lang.String, [[Z, boolean)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testDangerGridEncapsulation" data-provider="dangerGridsEncapsulation" finished-at="2019-09-20T10:38:52 MDT" duration-ms="14" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sample4x5.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[Z@5c5eefef]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDangerGridEncapsulation -->
+        <test-method signature="testDangerGridEncapsulation(java.lang.String, [[Z, boolean)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testDangerGridEncapsulation" data-provider="dangerGridsEncapsulation" finished-at="2019-09-20T10:38:52 MDT" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sampleDoubles.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[Z@5158b42f]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDangerGridEncapsulation -->
+        <test-method signature="testDangerGridEncapsulation(java.lang.String, [[Z, boolean)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testDangerGridEncapsulation" data-provider="dangerGridsEncapsulation" finished-at="2019-09-20T10:38:52 MDT" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wideRange.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[Z@72d1ad2e]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDangerGridEncapsulation -->
+        <test-method signature="testDeltaGridEncapsulation(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testDeltaGridEncapsulation" data-provider="deltaGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sample.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@399f45b1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeltaGridEncapsulation -->
+        <test-method signature="testDeltaGridEncapsulation(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testDeltaGridEncapsulation" data-provider="deltaGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[negatives.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@478190fc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeltaGridEncapsulation -->
+        <test-method signature="testDeltaGridEncapsulation(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testDeltaGridEncapsulation" data-provider="deltaGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[oneByOne.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@3a93b025]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeltaGridEncapsulation -->
+        <test-method signature="testDeltaGridEncapsulation(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testDeltaGridEncapsulation" data-provider="deltaGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sample4x5.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@7e07db1f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeltaGridEncapsulation -->
+        <test-method signature="testDeltaGridEncapsulation(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testDeltaGridEncapsulation" data-provider="deltaGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sampleDoubles.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@36bc55de]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeltaGridEncapsulation -->
+        <test-method signature="testDeltaGridEncapsulation(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testDeltaGridEncapsulation" data-provider="deltaGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wideRange.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@16d04d3d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeltaGridEncapsulation -->
+        <test-method signature="testFileNotFoundException()[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testFileNotFoundException" finished-at="2019-09-20T10:38:52 MDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFileNotFoundException -->
+        <test-method signature="testGetBaseGrid(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetBaseGrid" data-provider="baseGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sample.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@79924b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetBaseGrid -->
+        <test-method signature="testGetBaseGrid(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetBaseGrid" data-provider="baseGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[negatives.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@4cc451f2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetBaseGrid -->
+        <test-method signature="testGetBaseGrid(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetBaseGrid" data-provider="baseGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[oneByOne.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@294425a7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetBaseGrid -->
+        <test-method signature="testGetBaseGrid(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetBaseGrid" data-provider="baseGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sample4x5.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@9f116cc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetBaseGrid -->
+        <test-method signature="testGetBaseGrid(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetBaseGrid" data-provider="baseGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sampleDoubles.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@1aa7ecca]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetBaseGrid -->
+        <test-method signature="testGetBaseGrid(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetBaseGrid" data-provider="baseGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wideRange.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@5876a9af]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetBaseGrid -->
+        <test-method signature="testGetDangerGrid(java.lang.String, [[Z)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetDangerGrid" data-provider="dangerGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sample.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[Z@515aebb0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDangerGrid -->
+        <test-method signature="testGetDangerGrid(java.lang.String, [[Z)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetDangerGrid" data-provider="dangerGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[negatives.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[Z@245b4bdc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDangerGrid -->
+        <test-method signature="testGetDangerGrid(java.lang.String, [[Z)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetDangerGrid" data-provider="dangerGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[oneByOne.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[Z@6ae5aa72]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDangerGrid -->
+        <test-method signature="testGetDangerGrid(java.lang.String, [[Z)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetDangerGrid" data-provider="dangerGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sample4x5.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[Z@5c5eefef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDangerGrid -->
+        <test-method signature="testGetDangerGrid(java.lang.String, [[Z)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetDangerGrid" data-provider="dangerGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sampleDoubles.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[Z@5158b42f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDangerGrid -->
+        <test-method signature="testGetDangerGrid(java.lang.String, [[Z)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetDangerGrid" data-provider="dangerGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wideRange.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[Z@72d1ad2e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDangerGrid -->
+        <test-method signature="testGetDeltaGrid(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetDeltaGrid" data-provider="deltaGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sample.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@399f45b1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDeltaGrid -->
+        <test-method signature="testGetDeltaGrid(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetDeltaGrid" data-provider="deltaGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[negatives.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@478190fc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDeltaGrid -->
+        <test-method signature="testGetDeltaGrid(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetDeltaGrid" data-provider="deltaGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[oneByOne.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@3a93b025]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDeltaGrid -->
+        <test-method signature="testGetDeltaGrid(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetDeltaGrid" data-provider="deltaGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sample4x5.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@7e07db1f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDeltaGrid -->
+        <test-method signature="testGetDeltaGrid(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetDeltaGrid" data-provider="deltaGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sampleDoubles.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@36bc55de]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDeltaGrid -->
+        <test-method signature="testGetDeltaGrid(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetDeltaGrid" data-provider="deltaGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wideRange.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@16d04d3d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDeltaGrid -->
+        <test-method signature="testGetSurroundingAvgGrid(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetSurroundingAvgGrid" data-provider="avgGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sample.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@223191a6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetSurroundingAvgGrid -->
+        <test-method signature="testGetSurroundingAvgGrid(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetSurroundingAvgGrid" data-provider="avgGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[negatives.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@9597028]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetSurroundingAvgGrid -->
+        <test-method signature="testGetSurroundingAvgGrid(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetSurroundingAvgGrid" data-provider="avgGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[oneByOne.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@4efbca5a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetSurroundingAvgGrid -->
+        <test-method signature="testGetSurroundingAvgGrid(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetSurroundingAvgGrid" data-provider="avgGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sample4x5.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@59662a0b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetSurroundingAvgGrid -->
+        <test-method signature="testGetSurroundingAvgGrid(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetSurroundingAvgGrid" data-provider="avgGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sampleDoubles.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@67c27493]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetSurroundingAvgGrid -->
+        <test-method signature="testGetSurroundingAvgGrid(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetSurroundingAvgGrid" data-provider="avgGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wideRange.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@72967906]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetSurroundingAvgGrid -->
+        <test-method signature="testGetSurroundingSumGrid(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetSurroundingSumGrid" data-provider="sumGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sample.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@2f9f7dcf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetSurroundingSumGrid -->
+        <test-method signature="testGetSurroundingSumGrid(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetSurroundingSumGrid" data-provider="sumGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[negatives.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@35e2d654]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetSurroundingSumGrid -->
+        <test-method signature="testGetSurroundingSumGrid(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetSurroundingSumGrid" data-provider="sumGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[oneByOne.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@55183b20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetSurroundingSumGrid -->
+        <test-method signature="testGetSurroundingSumGrid(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetSurroundingSumGrid" data-provider="sumGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sample4x5.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@6cf0e0ba]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetSurroundingSumGrid -->
+        <test-method signature="testGetSurroundingSumGrid(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetSurroundingSumGrid" data-provider="sumGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sampleDoubles.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@130d63be]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetSurroundingSumGrid -->
+        <test-method signature="testGetSurroundingSumGrid(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGetSurroundingSumGrid" data-provider="sumGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wideRange.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@293a5bf6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetSurroundingSumGrid -->
+        <test-method signature="testGridMonitorInterface()[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testGridMonitorInterface" finished-at="2019-09-20T10:38:52 MDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGridMonitorInterface -->
+        <test-method signature="testSurroundingAvgGridEncapsulation(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testSurroundingAvgGridEncapsulation" data-provider="avgGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sample.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@223191a6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSurroundingAvgGridEncapsulation -->
+        <test-method signature="testSurroundingAvgGridEncapsulation(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testSurroundingAvgGridEncapsulation" data-provider="avgGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[negatives.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@9597028]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSurroundingAvgGridEncapsulation -->
+        <test-method signature="testSurroundingAvgGridEncapsulation(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testSurroundingAvgGridEncapsulation" data-provider="avgGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[oneByOne.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@4efbca5a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSurroundingAvgGridEncapsulation -->
+        <test-method signature="testSurroundingAvgGridEncapsulation(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testSurroundingAvgGridEncapsulation" data-provider="avgGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sample4x5.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@59662a0b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSurroundingAvgGridEncapsulation -->
+        <test-method signature="testSurroundingAvgGridEncapsulation(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testSurroundingAvgGridEncapsulation" data-provider="avgGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sampleDoubles.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@67c27493]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSurroundingAvgGridEncapsulation -->
+        <test-method signature="testSurroundingAvgGridEncapsulation(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testSurroundingAvgGridEncapsulation" data-provider="avgGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wideRange.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@72967906]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSurroundingAvgGridEncapsulation -->
+        <test-method signature="testSurroundingSumGridEncapsulation(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testSurroundingSumGridEncapsulation" data-provider="sumGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sample.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@2f9f7dcf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSurroundingSumGridEncapsulation -->
+        <test-method signature="testSurroundingSumGridEncapsulation(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testSurroundingSumGridEncapsulation" data-provider="sumGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[negatives.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@35e2d654]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSurroundingSumGridEncapsulation -->
+        <test-method signature="testSurroundingSumGridEncapsulation(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testSurroundingSumGridEncapsulation" data-provider="sumGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[oneByOne.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@55183b20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSurroundingSumGridEncapsulation -->
+        <test-method signature="testSurroundingSumGridEncapsulation(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testSurroundingSumGridEncapsulation" data-provider="sumGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sample4x5.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@6cf0e0ba]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSurroundingSumGridEncapsulation -->
+        <test-method signature="testSurroundingSumGridEncapsulation(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testSurroundingSumGridEncapsulation" data-provider="sumGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sampleDoubles.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@130d63be]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSurroundingSumGridEncapsulation -->
+        <test-method signature="testSurroundingSumGridEncapsulation(java.lang.String, [[D)[pri:0, instance:GridMonitorTester@6107227e]" started-at="2019-09-20T10:38:52 MDT" name="testSurroundingSumGridEncapsulation" data-provider="sumGrids" finished-at="2019-09-20T10:38:52 MDT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wideRange.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[D@293a5bf6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSurroundingSumGridEncapsulation -->
+      </class> <!-- GridMonitorTester -->
+    </test> <!-- Tests -->
+  </suite> <!-- Grid Monitor -->
+</testng-results>

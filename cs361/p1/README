@@ -1,0 +1,73 @@
+# Project 1: Deterministic Finite Automata 
+
+* Author: Steven Meyers
+* Class: CS361 Section 2
+* Semester: Fall 2020
+
+## Overview
+
+This program simulates a DFA with transitions and states. The user 
+can add states and transitions as well as input a string and see if the 
+DFA accepts or rejects the string.
+
+## Compiling and Using
+
+To compile and use this code, make sure you have the rest of the files 
+needed from the Blackboard assignment. Included in these files is a DFADriver.java file.
+To compile from the top directory, use the following command:
+```
+$ javac fa/dfa/FILENAME.java
+```
+For expample, to compile the DFADriver.java file:
+```
+$ javac fa/dfa/DFADriver.java
+```
+
+To use the program, run:
+```
+$ java fa.dfa.DFADriver [testfile.txt]
+```
+Where test file is the properly formatted file that you will be using to make a DFA and test.
+For other use purposes, you can include methods from the DFA.java and DFAState.java in 
+your .java file and make a DFA object to use that way.
+
+## Discussion
+
+While programming this project, I encountered one major problem. The provided methods from the interface had
+the creation of transitions done using a (String, Character, String) format while the methods that used the
+transition map required. This led to a lot of confusion on how to implement these. I got around this by adding a
+private method that searches the state list and returns any state that has a name matching the string. 
+This allowed me to convert the storage of Strings from the map to working states for the methods like getToState.
+
+I did very little research when programming this DFA implementation and learned a lot about how maps work 
+from this assignment. This program mainly helped me learn how to conceptualize and illustrate it. To create
+this program and the complicated methods that were involved, as mentioned previously in this section, I used
+a small whiteboard and modeled a DFA, then drew on it as I developed the methods and saw their output. This
+helped a lot when making the final versions of the methods as I was able to verify that I was producing a viable
+DFA.
+
+I kept getting an error when trying to make an implementation of the transitions using DFAStates stored in the
+map instead of their string counter parts. When I made a DFA complement, the transition map would no longer be 
+correct and working as the DFAStates that it had within were nonexistent in the new DFA. This kept giving me a 
+NullPointerError that took me a while to figure out. I fixed it with a sudden "clicking moment" of making the
+previosuly mentioned method that turns strings into their corresponding state. This allowed me to basically use
+the same map for both the DFA and its complement as the structure doesn't change, just the actual DFAState
+objects.
+
+I do not think that I would change anything in this project if I could. It provided the perfect amount of difficulty
+while still being do able in a real amount of time. I definitely can apply the knowledge of how packages and implementation works to future projects.
+
+## Testing
+
+I tested this project using the provided test classes. I did not want to make my own tests and accidentally mess something
+up with the way the file is formatted and then think the problem was with my program. I simply
+kept using the provided test cases and comparing them to the results seen in the project until they were
+as close as possible.
+
+## Extra Credit
+
+No extra credit in this assignment.
+
+## Sources used
+
+[computer science - Can I implement State Transitions for a DFA in Java using java.util.Set - Stack Overflow](https://stackoverflow.com/questions/444889/can-i-implement-state-transitions-for-a-dfa-in-java-using-java-util-set)

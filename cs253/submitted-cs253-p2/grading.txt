@@ -1,0 +1,20 @@
+[293]  Start grading /home/BrianMerrick/cs253/hw/p2/stevenmeyers946.tar Score=60
+[309]  Grading make all Score=60
+[322]  Grading CFLAGS and -Wall Score=60
+[326]  Grading -i lower case pattern Score=60
+I went to the food market.
+[338]  Grading -i upper case pattern Score=60
+I went to the food market.
+[349]  Grading exit status for no-lines-matched Score=60
+[358]  Grading expected match at beginning of a line Score=60
+I went to the food market.
+[365]  Grading expected match at beginning of a line Score=60
+I went to the food market.
+[372]  Grading an empty file Score=60
+[381]  Grading case sensitive match-not-found in /home/BrianMerrick/Documents/CS253/projects/P2/match/grader/TestData/testData.txt Score=60
+
+[392]  Grading case sensitive match in /home/BrianMerrick/Documents/CS253/projects/P2/match/grader/TestData/testData.txt Score=60
+I went to the food market.
+[405]  Grading make clean Score=60
+[411]  Grading make does nothing if product is up-to-date Score=60
+[437]  FinalScore=60  Score=60

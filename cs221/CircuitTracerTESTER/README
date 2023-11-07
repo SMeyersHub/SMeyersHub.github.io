@@ -1,0 +1,201 @@
+****************
+* Project 3: Circuit Tracer
+* CS221 Section 2
+* 12/14/2019
+* Steven Meyers
+**************** 
+
+OVERVIEW:
+
+ The program sets up a CircuitBoard object that can store data input
+ from a file, and then puts the CircuitBoard object into the CircuitTracer
+ class. The CircuitTracer class outputs the best possible results
+ for a path from the start to end of the file it is called on.
+
+INCLUDED FILES:
+
+ * CircuitBoard.java - source file
+ * CircuitTracer.java - source file
+ * README - this file
+ 
+COMPILING AND RUNNING:
+
+ To run this program, make sure you have the file that you want to read as well 
+ as the mandatory classes such as CircuitBoard.java, CircuitTracer.java, 
+ TraceState.java, Storage.java, OccupiedPositionException.java, and 
+ InvalidFileFormatException.java in the same directory as each other.
+ The first command you are going to want to use is the javac command, so
+ input the following line in the console when in the directory with the files.
+ 
+ ```
+ $javac *.java
+ ```
+ 
+ This will compile all the java files at once. Following this command, you will
+ want to use the following format when inputting the next command:
+ 
+ ```
+ $java CircuitTracer ("-s" or "-q") ("-c" or "-g") (filename)
+ ```
+ 
+ This command format will then read your file, put within the filename spot,
+ and use either a stack or queue to store the data. It will also print out 
+ the results of that file in either console or GUI format (not supported at
+ this moment).
+ 
+PROGRAM DESIGN AND IMPORTANT CONCEPTS:
+
+ The program starts out with the driver class being the CircuitTracer class. This class
+ takes in the file name as part of the command line arguments and calls the CircuitBoard
+ class which actually does the reading of the file and decides what errors to print out,
+ if any. The responsibility of the CircuitBoard class is to make an object that is
+ able to be modified using the CircuitTracer class and if nothing can be created
+ or if the file formatting is incorrect, it prints out an error stating what in the
+ file is incorrectly formatted. Once it is done reading in the file and putting it
+ in a 2D array, it passes it back to the CircuitTracer class.
+
+ The CircuitTracer class takes the other command line args such as storage and 
+ output type and checks to make sure that it matches at least one of the approved
+ formats. If not, it prints out an error explaining what is wrong and what
+ possible choices you have for each arg. Once the correct formatting is done for
+ all parts, the circuit tracer repeatedly scans the surrounding array spots of
+ the latest trace marker, or the start if none have been made. Throughout repeatedly
+ calling this process, it makes a trace state eventually that reaches the end and stores
+ it within the list of bestPaths if it matches the smallest path in bestPaths. The 
+ CircuitTracer does this until all bestPaths are found and then returns them to 
+ console or GUI (not supported at this time).
+
+ The design behind this program was to have a program that could easily take a file and
+ find all possible routes between a "start point" and an "end point". It does this by
+ recursively calling a search around the current marked array node until it hits a 
+ state where one of the scans returns that of the "end marker". By searching all of the
+ possible states, it can get the best states for any correctly formatted board and return them
+ all in a relatively fast time.
+ 
+TESTING:
+
+ To test my program, I used several various testers provided to me. Back before 
+ the CircuitTracerTester was removed from the testing file, I used it. The tester
+ had the problem of constantly failing a certain number of tests and I had to 
+ debug why this was. I found out that the reason it was failing a constant 20+ tests was
+ simply because Eclipse did not process and create the class files outside of when it was running, 
+ this caused it to constantly fail locating the CircuitTracer.class file, as it did not
+ exist. Once I started importing it to Onyx and using javac *.java to process all class
+ files, I got the program to pass all tests in the CircuitTracerTester.java.
+ 
+ While using the CircuitTracerTester to test my CircuitBoard and CircuitTracer, I
+ found multiple bugs that I had to fix. The first one was a NullPointerException 
+ on all of my tests. I found out that this was due to the fact that I had not declared
+ the start point or end point when declaring my CircuitBoard object. This meant that 
+ every time I tried to use the getStartingPoint method in CircuitTracer, it would find
+ only a null value for that and return the NullPointerException. I declared both the 
+ proper start and end points in my CircuitBoard class and those particular bugs went 
+ away, but some tests were still returning null pointer errors. I realized that this 
+ was because I was lacking several major checks for boundaries when creating the grid
+ from the file. After some working on bounds and constantly running the CircuitTracerTester
+ class, I finally got all the invalid files to pass with the correct message being printed
+ when they threw a null pointer.
+ 
+ The most major bug I encountered when programming the CircuitTracer class was that of 
+ the bestPaths list only printing out the very first result that the program got for a 
+ bestPath. I took a long time to find out why this was and actually accidentally fixed
+ several smaller bugs while looking for a solution. One of these smaller bugs was
+ that on some tests the program would check the same position twice and try to put
+ a trace marker on an already existing trace state. All it took to fix that smaller
+ bug was a simple check I forgot for the lower position from the current selected 
+ point in the double array. After fixing this little bug, I found the fix for the 
+ incorrect print out of the program. The whole time, I was simply using "if (!bestPaths.isEmpty())"
+ to print out the results of the circuit tracer program. This caused the print
+ function to only activate once and when I swapped the if for a while loop, it worked
+ as intended and passed all the tests in the CircuitTracerTesterFile.
+ 
+ After I passed all the tests using the CircuitTracterTester.java file, I got the 
+ email stating that we were not supposed to use it as a tester as it was flawed when
+ testing. I found the new and updated testing file and imported all of the files within 
+ to a different directory where I tested my code using the "process" file to run tests. I
+ immediately passed all the tests using that file and that was my last form of testing
+ my file. 
+ 
+ As of submission, there are no known bugs in my knowledge with the current program set up.
+ I would personally consider the program pretty idiot proof as it has detailed reports of
+ what exactly went wrong and in the case of running the program, has detailed instructions 
+ on how and what to input in the command line.
+ 
+DISCUSSION:
+ 
+ I took the coding of this project in mainly two large portions. The reasoning behind this
+ was that the logic behind it confused me greatly for about a day or two and I had to think
+ about what I was trying to get at or if I was doing it correctly. The first major day was 
+ mainly based around getting my CircuitBoard to work correctly. The reason that it took a
+ while to start was that I honestly forgot how to scan a document and do all the checks.
+ I found out how to do it with help of looking back at one of the first projects we did, 
+ such as the grid calculator with the average grid and the delta grid. I realized that
+ the grid scanning in this project was ideally the same thing as what we had programmed
+ back then. After that day, I had to go to class and lost my train of thought when returning.
+
+ Programming the CircuitTracer was another experience because it was basically starting from
+ scratch again. I had tested the CircuitBoard since the last run of the program and knew it 
+ worked correctly, but for some reason my CircuitTracer kept failing. This is when I realized 
+ that, as explained in the testing section, that the Tester was faulty and I had to double check
+ things. Once I got the .class file actually working, I just started programming and working from
+ what I had done in the Analysis portion. I had a white board in which I drew what needed to be done
+ every time the program ran and a new trace state was brought in. I programmed based off of this 
+ drawing and it worked decently for the first time. After some debugging I got it working correctly.
+ The next day is when I wrote this whole document and ran multiple tests of the code as well
+ as commented all of it.
+ 
+ My experience overall was quite helpful and taught me a lot on how looking at past code that I have
+ written can help me break down a larger project into smaller bits that can be accomplished. It
+ helped me view the larger project as that of multiple smaller ones that could completed as time passes
+ rather than trying to sit down and do it all at once.
+ 
+ANALYSIS:
+ 1. How does the choice of Storage configuration (stack vs queue) affect the
+    order in which paths are explored in the search algorithm?
+    
+ Using a queue storage configuration makes the possible pathways slowly expand from
+ the starting point on the circuit board. This is because it reads from the earliest
+ trace states and slowly moves towards the newer trace states put on the back of the queue.
+ The stack works opposite of the queue and will develop a single pathway as far as it possibly 
+ can go and then move to the next possible pathway as it uses the most recently added trace state
+ which will always be the farthest placed trace marker from the start point.
+ 
+ 2. Is the total number of search states (possible paths) affected by the choice
+    of stack or queue?
+    
+ No, they both result in the total amount of possible paths and best results, 
+ just the time it takes to get them all differs from what I have done by hand using
+ the test graph provided in the instructions and from the logic I know behind queues 
+ and stacks that we learned in class.
+ 
+ 3. What is the Big-Oh runtime for the search algorithm?
+ 
+ The big O of the search algorithm is that of O(n^2). This is because going through the whole list 
+ when the while(!stateStore.isEmpty()) is happening is n runtime as its just going through a list of n
+ items and the if method inside of it also has a n runtime, which makes n run n times. This totals to
+ n^2 runtime.
+ 
+ 4. How is memory use (the maximum number of states in Storage at one time) affected
+    by the choice of underlying structure?
+    
+ Using a stack is the most efficient memory use method because it will fully trace out
+ a single pathway and then can remove it from them from the trace state storage. A queue
+ will get to the same pathway, but will have more trace states stored as it slowly will
+ expand from the center and not be able to remove the completed states for a longer amount of time. 
+ 
+ 5. Does using one of the storage structures usually find a solution faster than the other? Always?
+ 
+ The stack method usually finds the solution faster than the queue, but not always. 
+ If the stack method heads the wrong way at the start, it will take it longer to 
+ get around to the end then the slow spreading queue will, since it will be mapping 
+ all possible paths from the start. This is rarely the case though and often it will
+ find a possible solution quicker than the queue will.
+ 
+ 6. Does using either of the storage structures guarantee that the first solution found will be a shortest path?
+ 
+ Using a queue guarantees that the first found path will be the shortest as it only moves out on each path one at a time. Since
+ it will slowly expand, the first path to get to the end point will be a shortest path as well.
+ 
+ EXTRA CREDIT:
+
+ NA. I did not decide to do the GUI portion of this project.

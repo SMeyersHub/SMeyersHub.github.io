@@ -1,0 +1,153 @@
+Analysis of Algorithms
+Steven Meyers
+CS 221
+
+Defend all answers based on specific references to the code. Do not count return statements or initialization of method arguments. 
+You are strongly encouraged to walk through algorithms in the debugger and to add statement-counting code to given methods to test 
+and refine your analysis.
+
+Algorithm: find()
+
+Minimum Statements. How many statements would be executed in a call to find() when the array size is zero (n == 0)? 
+
+If the array size equals zero in the find() method, it is going to initialize i = 0 still. Then it will check to see if 
+i < array.length which is false and then go to a return statement. Two statements no matter what get executed because:
+1.	Initialize i = 0;
+2.	Evaluate i < array.length which is false.
+T(0) = 2
+
+Best Case Scenario. Under what conditions would the minimum number of statements be executed for an array where n is large? 
+Where would the target element be located in the array? What is the growth function under these conditions?
+
+There would be four statements in the best possible run of the find() method that isn’t of length 0. The target element would be the 
+very first item in the array which is at array[0], where the i is initialized at 0. This makes all the statements only need to be 
+evaluated once before they hit their return statement which ends the possibility of the for loop going to n+1.
+1.	Initialize i = 0;
+2.	Evaluate I < array.length which is true up until n +1;
+3.	Evaluate array[i] == value which is true for the best possible input.
+T(n) = 3. This is a constant growth function because the time doesn’t change as long as the statement is in the first spot of the array.
+
+Worst Case Scenario. Under what conditions would the maximum number of statements be executed for an array where n is large? 
+Where would the target element be located? What is the growth function under these conditions?
+
+The target element would not be located at all within the array in the worst case scenario. Since the element isn’t in the array, 
+the loop is going to go through all the way and loop its inside function every time until it evalutates false where it will then 
+return a -1. This is the way the array would be evaluated in theory:
+1.	Initialize I = 0; length of 1.
+2.	Evaluate i < array.length which is true up until n + 1: length of n + 1.
+3.	Every loop, I++. Length of n.
+4.	Evaluate array[i] == value which is false up until n times; length of n.
+
+1+(n+1)+n+n+1= 3n + 2 as the time in the worst possible case. This function is a linear time since the function grows with direct 
+proportion to the data sets size. 
+
+Expected Average Case Scenario. Assuming a random array of unique elements and the target element is in the array, 
+where would a target element be located on average? What is the expected average number of statements (the expected growth function) 
+for a call to find()?
+
+The average case would often have the element in the array sometime in between the end and beginning so the T(n) of the 
+average function would be ((3n)/2) + 2.
+
+What is the runtime order (big-O) of find() based on the above growth functions?
+
+Big O based off the above functions is O(n)
+
+Algorithm: replaceAll()
+
+Minimum Statements. How many statements would be executed in a call to replaceAll() when the array size is zero (n == 0)?
+
+4 Minimum statements.
+1.	Int index = find(array, oldValue) where array size = 0; length = 1;
+2.	For int(i = 0; i < array.length; i++) which is length of 1 + 1 + 0 because I ++ is not reached.
+3.	While (index > -1) returns false as well which is length 1;
+Total length: 1 + 1 + 1 + 0 + 1. Constant T(0) = 4.
+
+Best Case Scenario. Under what conditions would the minimum number of statements be executed for an array where n is large? How 
+many occurrences of the oldValue element would be in the array? Where would it/they be located in the array? What is the growth 
+function under these conditions?
+
+Best case scenario would be if value you wanted to replace was not in the array of n size at all. This would make the replaceAll 
+method search through find(array, oldValue) to look for the index and not find it. Not finding it returns a -1 which makes the 
+while statement false and not evaluate any of the inner lines of code.
+1.	Int index = find(array, oldValue) where array size = n and oldValue isn’t in it at all; length of worst case from the find() 
+	algorithm which was 3n + 2.
+2.	Returns a -1 and while is evaluated as false; 1 more statement.
+The growth function for the best case would be simply 3n + 3.
+
+
+Worst Case Scenario. Assuming newValue and oldValue are not equal, under what conditions would the maximum number of statements be 
+executed for an array where n is large? How many occurrences of oldValue are in the array? Where would it/they be located? What is 
+the growth function under these conditions? 
+
+The worst-case scenario would appear when the array is filled with all oldValues that are going to be replaced by the new value. 
+The amount of oldValue occurrences would be n, which is the size of the array and located at every single input. The growth function 
+for this condition would include a n(n+1)/2 somewhere to calculate the amount of times it goes through the array and adds one more 
+single i++ in the find method called by the replaceAll method. The best guess I have for how this methods growth function would work 
+is something like this:
+1.	Index = find(array, oldValue); add 4 because this is the best case of the find method (which is 3 statements) and then add 1 
+	more for assigning it to index. 
+2.	The while loop will take n times to loop through the whole index. Add n
+3.	Array assignment to newValue would also take n times because the while loop loops n times.
+4.	The find method in the while loop would take n(n+1)/2 statements because it would take one more statement every loop through
+This equation (4 + 2n + n(n + 1)/2) is the best guess I have to calculate how this is done and multiple 221 tutors have said this is 
+the direction I should be working in. A problem arises though that every time I run a tester with statements being added, they equal 
+up to only a fraction of the calculated average using this equation. I can not find out whether it is my equation or counter that is 
+wrong,but I believe it is the counter as I mathematically always come up with something close to this equation every time I try to 
+calculate the method by hand.
+
+Expected Average Case Scenario. Assuming a random array of unique elements and oldValue is a value in the array, what is the average 
+number of statements (the expected growth function) for a call to replaceAll()?
+
+The average case of statements will just be ((2n + n(n + 1)/2)/2) +4. 
+
+What is the runtime order (big-O) of replaceAll() based on the above growth functions?
+
+Big-O of the above growth functions is O(n^2) because it increases as the set of data increases. That is also the largest n factor in 
+the equation of 4 + 2n + (n^2 +n)/2
+
+Algorithm: sortIt()
+
+Minimum Statements. How many statements would be executed in a call to sortIt() when the array size is zero (n == 0) or one (n == 1)?
+
+To evaluate this method when the array size is zero, we must look at what gets used and what doesn’t. The first thing the method would 
+do is initialize the next value which makes the statement count go up to 1. The next thing would be check the current next value versus
+the array.length, which is 0, so it evaluates as false. This means the next++ is never going to be activated so we do not need to add 
+anything. The rest of the method is within the for statement that is skipped because of the conditions not being met, so the total 
+amount of statements executed when the array size == 0 would be 2.
+When the array size is 1, the process is basically the exact same because it fails the next < array.length condition again which makes 
+it just skip the for loop. The total amount of statements activated again for an array of size 1 is 3. 
+
+Best Case Scenario. Under what conditions would the minimum number of statements be executed for an array where n is large? 
+Would the algorithm execute a different number of statements if the elements in the array were already in sorted order? Reverse order? 
+Random order? All the same? What is the growth function under the best case conditions?
+
+The best case of this scenario would be if the whole array of n size was the same number. The while loop would never pass the 
+first conditional so it would simply be 1 statement. This means the total function would be:
+1. for (int next = 1; next < array.length; next++) which is 1 statement for the next declaration, n + 1 statements for the next < array.length condition check, and n for the next++ incrementing.
+2. int value = array[next]; 1 statement for simple assignment times n for the times its looped in the for loop
+3. int index = next; 1 statement for simple assignment times n for the times its looped in the for loop
+4. while (index > 0 && value < array[index - 1])  will evaluate n times because it will evaluate false each time and skip the 
+   inside of it. 
+5. The array[index] = value will loop once 
+The growth function for this best case would be 1 + n + 1 + n + n + n + n which can be simplified as 5n + 2.
+
+Worst Case Scenario. Under what conditions would the maximum number of statements be executed for an array where n is large? 
+(Already in some kind of sorted order? Duplicates?) What is the growth function under the worst case conditions?
+
+The worst case that this could be would be if each number in the array was different and they were all in descending order 
+(largest as the first entry in the array). The way the statements would be evaluated in this problem would be the same up until the 
+while loop so I added up the statements and got 1 + (n + 1) + n + n + n + 2n + n + n + n which equals 2 + 9n. This is the amount of 
+statements executed by the inside every loop, but the total amount has to be in some relation of m^n power because the for loop has to 
+move every single value from the position its in to the other side of the array until the while evaluates as false. By using the 
+tester, I found out that the growth is non linear when you run more tests and expands in an exponential relationship so it would be 
+something like that. 
+
+Expected Average Case Scenario. Assuming a random array of unique elements, what is the expected average number of statements (the 
+expected growth function) for a call to sortIt()?
+
+The average case for this function is just the worst case scenario divided by two, so (m^n)/2.
+
+What is the runtime order (big-O) of sortIt() based on the above growth functions?
+
+The big-O of this method is most likely going to be exponential so O(n^m) where n is some number of statements and m is some 
+size of an array.
