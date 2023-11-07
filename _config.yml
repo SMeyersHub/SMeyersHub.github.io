@@ -1,6 +1,6 @@
 lsi: false
 safe: true
-source: main
+source: docs
 incremental: false
 highlighter: rouge
 gist:
